@@ -19,9 +19,9 @@ def find_num_all(num):
     Não procura por '.'(pontos), podendo alterar os valores de floats
     ou números maiores que 999 (1.000)
     Esta função retorna integers. Se não encontrar nenhum número, retornará 0."""
-    rex = re.compile(r'([0-9])')
+    rex = re.compile(r'([0-9])').findall(str(num))
     if rex:
-        return int("".join(rex.findall(str(num))))
+        return int("".join([*rex]))
     else:
         return 0
 
