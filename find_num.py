@@ -30,8 +30,15 @@ def find_num_(num):
     Ela também funciona para floats
     Retornará uma string somente com números
     Se não encontrar nenhum número, retornará 0"""
-    n = ''
-    for index, char  in enumerate(str(num)):
-        if char.isnumeric() or (char == '.' and num[index-1].isnumeric() and num[index+1].isnumeric()):
-            n += char
+    num = str(num)
+    n = "".join([char
+                 if (
+                     char.isnumeric()
+                           or char == '.'
+                           and num[index-1].isnumeric()
+                           and num[index+1].isnumeric()
+                           )
+                 else ""
+                 for index, char in enumerate(num)
+                 ])
     return n if n != "" else 0
