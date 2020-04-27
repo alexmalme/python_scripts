@@ -6,7 +6,7 @@ def find_words(word):
     Retornará todas as letras dentro do input 'word'
     Se não encontrar nenhuma letra, retornará ''(vazio)."""
     w = ''
-    for index, char  in enumerate(str(word)):
+    for index, char in enumerate(str(word)):
         if char.isalpha():
             w += char
     return w.strip()

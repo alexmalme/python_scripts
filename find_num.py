@@ -20,7 +20,8 @@ def find_num_all(num):
     Ela continua sua busca mesmo que encontre letras
     Não procura por '.'(pontos), podendo alterar os valores de floats
     ou números maiores que 999 (1.000)
-    Esta função retorna integers. Se não encontrar nenhum número, retornará 0."""
+    Esta função retorna integers.
+    Se não encontrar nenhum número, retornará 0."""
     rex = re.compile(r'([0-9])').findall(str(num))
     if rex:
         return int("".join([*rex]))
@@ -37,9 +38,9 @@ def find_num_(num):
     n = "".join([char
                  if (
                      char.isnumeric()
-                           or char == '.'
-                           and num[index-1].isnumeric()
-                           and num[index+1].isnumeric()
+                     or char == '.'
+                     and num[index-1].isnumeric()
+                     and num[index+1].isnumeric()
                            )
                  else ""
                  for index, char in enumerate(num)
