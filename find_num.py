@@ -1,7 +1,7 @@
 import re
 
 def find_num(num):
-    """Função para encontrar algorismos de 0-9 dentro de iteráveis
+    """Função para encontrar algarismos de 0-9 dentro de iteráveis
     Retornará apenas aa primeira sequência de números encontrados
     Esta função não procura por '.'(pontos) podendo alterar os valores
     de floats ou números maiores que 999 (1.000)
