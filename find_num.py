@@ -1,5 +1,6 @@
 import re
 
+
 def find_num(num):
     """Função para encontrar algarismos de 0-9 dentro de iteráveis
     Retornará apenas aa primeira sequência de números encontrados
@@ -13,6 +14,7 @@ def find_num(num):
     else:
         return 0
 
+
 def find_num_all(num):
     """Função para encontrar algorismos de 0-9 dentro de iteráveis
     Ela continua sua busca mesmo que encontre letras
@@ -24,6 +26,7 @@ def find_num_all(num):
         return int("".join([*rex]))
     else:
         return 0
+
 
 def find_num_(num):
     """Função para encontrar números dentro de iteráveis

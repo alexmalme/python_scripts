@@ -1,5 +1,6 @@
 import re
 
+
 def find_words(word):
     """Função para filtrar por apenas letras dentro de iteráveis
     Retornará todas as letras dentro do input 'word'
@@ -9,6 +10,7 @@ def find_words(word):
         if char.isalpha():
             w += char
     return w.strip()
+
 
 def find_word(word):
     """Função para encontrar palavras dentro de iteráveis,
